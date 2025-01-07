@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netspace/Activities/home.dart';
 
 void main() {
   runApp(MainApp());
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Home(),
         ),
       ),
     );
