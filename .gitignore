@@ -49,3 +49,6 @@ app.*.map.json
 # User Added Files
 # pubspec.yaml
 >>>>>>> efe027234477b9496ef5540febdeb3bfef754f9d
+# Exclude Batch and Bash Scripts
+Dev-Push.bat
+Release-Push.bat
