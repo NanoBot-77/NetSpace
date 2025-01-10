@@ -195,9 +195,9 @@ jobs:
         uses: actions/create-release@v1
         with:
           tag_name: v0.0.${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          release_name: Dev Release ${{ github.run_number }}
           draft: false
-          prerelease: false
+          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.NS_REPO_TOKEN }}
 
