@@ -133,7 +133,7 @@ name: Build APK
 on:
   push:
     branches:
-      - main
+      - Dev
 
 jobs:
   build:
