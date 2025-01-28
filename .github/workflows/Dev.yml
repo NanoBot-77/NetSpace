@@ -141,8 +141,8 @@ jobs:
 
     env:
       Java_VERSION: 17.0.12
-      FLUTTER_VERSION: 3.27.1
-      APK_NAME: NetSpace.apk
+      FLUTTER_VERSION: 3.27.3
+      APK_NAME: NetSpace-debug.apk
 
     steps:
       - name: Checkout code
@@ -179,10 +179,10 @@ jobs:
         run: flutter pub run flutter_launcher_icons
 
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --debug
 
       - name: Rename APK
-        run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/${{ env.APK_NAME }}
+        run: mv build/app/outputs/flutter-apk/app-debug.apk build/app/outputs/flutter-apk/${{ env.APK_NAME }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
