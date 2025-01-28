@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netspace/Activities/home.dart';
+import 'package:netspace/Test/testLogin.dart';
 
 void main() {
   runApp(MainApp());
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Center(
-          child: Home(),
+          child: testLogin(),
         ),
       ),
     );
